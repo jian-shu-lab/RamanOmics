@@ -121,7 +121,7 @@ Main files:
 
 ---
 
-### `scRNA/`
+### `snRNA/`
 
 R scripts for scRNA-seq downstream analysis, including differential expression, distribution comparison, and CellChat visualization.
 
