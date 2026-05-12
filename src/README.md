@@ -2,6 +2,13 @@
 
 This folder contains the major analysis scripts used in the RamanOmics project, including ISH image processing, STARmap/ISS preprocessing and downstream analysis (Lung as example), Raman preprocessing, imputation analysis, scRNA-seq plot codes, and snRNA-seq analysis (Lung as example).
 
+# Data Available
+All the data including scRNA-seq, spatial transcriptomics, and Raman Imaging data, are being uploaded to the SenNet Consortium (https://sennetconsortium.org/data-previews/) and are under review, which will be updated soon.
+
+# Software
+Single-cell RNA sequencing reads were processed with Cell Ranger on the Terra platform (https://app.terra.bio/). The count matrices obtained from Cell Ranger were uploaded into R v4.2.3 to remove the ambient RNA contamination using the SoupX package v1.6.2. The resulting matrices were used as input to construct a Seurat object using the Seurat package v4. The identification of putative multiplets was done using the scDblFinder v1.12.0 and the DoubletFinder v2.0.4 packages. Cells labeled as multiplets by any of the two methods were removed from the count matrices. The Seurat package was used for further filtering low-quality cells. The resulted Seurat objects were integrated using CCA integration in Seurat. For STARmap, images for individual tiles were deconvoluted using Huygens (23.04). Image registration was performed using 3D Fourier Transform through numpy.fft and Scipy. Starfish v0.2.2 was used to process sequencing signals. ClusterMap (v0.0.1) was employed for 2D cell segmentation of identified transcripts. Segmented cells from each sample were integrated for subsequent single-cell analysis using Seurat v4. Label transfer was performed using Seurat v4. Imputation was performed using Tangram. We employed CellChat to infer cell-cell interactions. 
+
+
 ## Directory structure
 
 ### `ISH/`
