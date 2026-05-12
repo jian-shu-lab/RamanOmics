@@ -154,13 +154,6 @@ Main files:
 
 ### `Raman/`
 
-Notebook for Raman spectral preprocessing.
-
-Main file:
-
-- `preprocess_0.ipynb`  
-  Preprocesses Raman spectroscopy data before downstream integration or analysis.
-
----
+Notebook for Raman spectral preprocessing, analysis, and integration.
 
 
