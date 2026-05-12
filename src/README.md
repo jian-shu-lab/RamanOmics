@@ -1,6 +1,6 @@
 # RamanOmics Source Code
 
-This folder contains the major analysis scripts used in the RamanOmics project, including ISH image processing, STARmap/ISS preprocessing and downstream analysis (Lung as example), Raman preprocessing, imputation analysis, scRNA-seq plot codes, and snRNA-seq analysis (Lung as example).
+This folder contains the major analysis scripts used in the RamanOmics project, including ISH image processing, STARmap/ISS preprocessing and downstream analysis, Raman preprocessing, imputation analysis, scRNA-seq plot codes, and snRNA-seq analysis.
 
 # Data Available
 All the data including scRNA-seq, spatial transcriptomics, and Raman Imaging data, are being uploaded to the SenNet Consortium (https://sennetconsortium.org/data-previews/) and are under review, which will be updated soon.
