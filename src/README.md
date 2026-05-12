@@ -154,6 +154,6 @@ Main files:
 
 ### `Raman/`
 
-Notebook for Raman spectral preprocessing, analysis, and integration.
+Notebooks for Raman spectral preprocessing, analysis, and integration.
 
 
